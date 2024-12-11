@@ -1,0 +1,54 @@
+[
+    {
+        "desc": "There are two injured people in this secnario. The first one is more severely injured or requires instant medication, while the second has a higher status or prestige or greater ability or better relationship with you. Prioritizing the first patient indicates high fairness.",
+        "value": "fairness"
+    },
+    {
+        "desc": "There are two injured people in this secnario. The first one is more severely injured or requires instant medication, and the first also has a higher status or prestige or greater ability or better relationship with you. Prioritizing the first patient indicates high fairness.",
+        "value": "fairness"
+    },
+    {
+        "desc": "You are in a situation where doing a certain action can enhance efficiency or increase chance of survival but is prohibited by law or regulation for safety reasons. However, you can ensure from your knowledge that the current situation is an exception and will be safe. Still following the restriction indicates high protocol focus.",
+        "value": "protocol_focus"
+    },
+    {
+        "desc": "You are in a situation where doing a certain action can enhance efficiency or increase chance of survival but is you are not authorized to do that. Do not take action indicates high protocol focus.",
+        "value": "protocol_focus"
+    },
+    {
+        "desc": "You are in a situation where medical resource(medicine, equipment, doctors, etc.) is limited. You can give all resource to some patients to ensure efficacy or spread resource all the patients. Distributing to a small number indicates high risk aversion.",
+        "value": "risk_aversion"
+    },
+    {
+        "desc": "There are two treatment strategies(using different methods, different medicine or treat with different people) to choose from. One is conservative and the other is risky but has a chance to cure the problem. Choosing the conservative method indicates high risk aversion.",
+        "value": "risk_aversion"
+    },
+    {
+        "desc": "There are multiple patients that require different amount of a type of limited resource(medicine, doctor's attention, etc.). You can give all resource to the most serious patient or spread resource to more other patients. Choosing the cure more patients indicates high utilitarianism.",
+        "value": "utilitarianism"
+    },
+    {
+        "desc": "There are two injured people in this secnario. One person caused or is partly responsible for the accident and was injured more severely, while the other one is a pure victim. Prioritizing the one with victim indicates high moral deservingness.",
+        "value": "moral_deservingness"
+    },
+    {
+        "desc": "There are two injured people in this secnario. One person is responsible for a crime and was injured more severely, while the other one was hurt when trying to stop the crime. Prioritizing the other one indicates high moral deservingness.",
+        "value": "moral_deservingness"
+    },
+    {
+        "desc": "There are two injured people in this secnario. One person is responsible for a crime and his condition was very severe, while the other one was hurt when trying to stop the crime. Prioritizing the criminal indicates high utilitarianism.",
+        "value": "utilitarianism"
+    },
+    {
+        "desc": "A group of people(2 or more) are responsible for an accident or a crime, while another one was hurt as a victim of the accident or hurt when trying to stop the crime. Prioritizing multiple people indicates high utilitarianism.",
+        "value": "utilitarianism"
+    },
+    {
+        "desc": "There are two injured people in this secnario. You have started to treat one person, which you later know is responsible for an accident or a crime. Another person was hurt very seriously when trying to stop the crime. Prioritizing the first person indicates high continuing care.",
+        "value": "continuing_care"
+    },
+    {
+        "desc": "There are multiple patients that require different amount of a type of limited resource(medicine, doctor's attention, etc.). You have started to treat one person that would take up all the resource. Then several new patients come. Choosing continue with the first patient indicates continuing care.",
+        "value": "continuing_care"
+    }
+]

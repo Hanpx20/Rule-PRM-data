@@ -99,7 +99,7 @@ def gen_scenario(prompt, model="gpt-4o"):
     response = client.chat.completions.create(
         model=model,
         messages=messages,
-        temperature=0.7,
+        temperature=1,
         n=1,
     )
     content = response.choices[0].message.content

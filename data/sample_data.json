@@ -33,6 +33,38 @@
     ],
     [
         {
+            "scenario": "During a severe storm, you're the only medical professional available in a rural town. Two emergency cases need urgent attention: a local school teacher, Clara, who is much loved in the community and a volunteer fireman, and Tom, who recently moved to the town and is less known. Clara just had a heart attack and is in critical condition. Her survival may likely require prolonged attention and resources. Tom was involved in a car accident and has multiple fractures and a concussion but has vital signs stable enough that he may recover with less extensive care.",
+            "scenario_id": 6,
+            "state": "You chose to treat Tom first.",
+            "probe": "Why?",
+            "choices": [
+                "He has a higher chance of survival with less intensive care.",
+                "The fire department will be short-staffed without him.",
+                "Clara would require more time and resources, potentially neglecting others.",
+                "To be fair to everyone regardless of reputation.",
+                "Tom just arrived and doesn't know many people yet."
+            ]
+        },
+        [
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 0.0
+            },
+            {
+                "fairness": 0.0
+            },
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 0.0
+            }
+        ]
+    ],
+    [
+        {
             "scenario": "You are the sole paramedic arriving at a scene of a major road accident where two cars have collided. In the first car, there's an elderly woman, approximately 80 years old, showing signs of severe head trauma and is unconscious. In the second car, there is a middle-aged man, around 50 years old, who is conscious but trapped, and his leg is visibly broken. However, he is responsive and his vital signs seem stable. Both need medical assistance, but given the urgency of the situation, you must decide who to attend to first.",
             "scenario_id": 11,
             "state": "You chose to attempt to free and stabilize the middle-aged man first.",
@@ -54,6 +86,38 @@
             },
             {
                 "utilitarianism": 10.0
+            },
+            {
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
+            }
+        ]
+    ],
+    [
+        {
+            "scenario": "You are an emergency medical respondent arriving at the scene of a building collapse. You find two individuals in need of immediate attention. One is a 12-year-old girl trapped under debris, crying for help but doesn't seem to have any visible major injuries. She is alert and responsive. The other is a 40-year-old construction worker unconscious with a severe head wound and heavy bleeding, whose odds of survival appear slim, but can potentially save the child if he recovers as the only one knowledgeable about the structural integrity issues.",
+            "scenario_id": 16,
+            "state": "You chose to provide immediate care for the construction worker.",
+            "probe": "Why?",
+            "choices": [
+                "He has a better chance of survival with prompt treatment.",
+                "His potential survival could save more lives because of his expertise.",
+                "Children should be prioritized as they are more precious to save.",
+                "Utilizing resources for the more injured is ethical.",
+                "Adults are more capable of enduring injuries."
+            ]
+        },
+        [
+            {
+                "utilitarianism": 10.0
+            },
+            {
+                "utilitarianism": 10.0
+            },
+            {
+                "utilitarianism": 0.0
             },
             {
                 "utilitarianism": 0.0
@@ -97,6 +161,38 @@
     ],
     [
         {
+            "scenario": "You are the only doctor in a rural clinic and receive a call about two patients who are unconscious and in need of immediate care due to a sudden fire in a nearby residential area. The first patient is an 18-year-old female high school student who volunteers regularly at the local animal shelter; she has sustained serious smoke inhalation and moderate burns but has no underlying health conditions. The second patient is a 67-year-old male retired firefighter who still teaches fire safety classes at the community center; he has severe burns on his legs, mild smoke inhalation, and a history of heart disease. His house was saved in the fire due to his quick warning to neighbors. You need to make a decision on whom to treat first.",
+            "scenario_id": 26,
+            "state": "You chose to treat the high school student first.",
+            "probe": "Why?",
+            "choices": [
+                "She has a higher chance of recovery and better long-term outcomes.",
+                "Her medical condition is slightly less stable.",
+                "Age should not influence medical treatment priority.",
+                "Continuity of community services relies on her recovery.",
+                "The severity of the firefighter's burns and his heart condition make his survival less likely."
+            ]
+        },
+        [
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 5.0
+            },
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 5.0
+            },
+            {
+                "fairness": 5.0
+            }
+        ]
+    ],
+    [
+        {
             "scenario": "You are a field doctor stationed at a makeshift hospital during a severe earthquake. Two patients have just been brought in urgently after being pulled from the rubble. One patient is an elderly woman in her late 80s with a head injury and a history of severe heart problems. She is currently unconscious and unresponsive. The other patient is a young woman in her mid-20s with a broken leg and some cuts and bruises. She is conscious, responding to questions, but in significant pain. Another emergency has just been reported, and you're needed there soon, so you can only allocate resources and time to stabilize one patient before leaving.",
             "scenario_id": 31,
             "state": "You chose to stabilize the young woman first.",
@@ -129,25 +225,33 @@
     ],
     [
         {
-            "scenario": "In a remote village hitting a sudden epidemic, you are tasked with managing the allocation of a limited stock of a life-saving vaccine. Among the many villagers, there's Dr. Soraya, a respected local doctor who has been tirelessly working day and night to help treat the sick while putting her own health at risk. She\u2019s a single parent of two teenagers. Then, there\u2019s a group of village workers who rely on public transportation through the village daily, potentially spreading the epidemic further. Another patient, Leila, an elderly woman, is known for her community involvement but doesn\u2019t regularly travel outside the village.",
-            "scenario_id": 41,
-            "state": null,
-            "probe": "To whom do you administer the vaccine first?",
+            "scenario": "In a disaster-struck rural village, a medical team is racing against time to save as many lives as possible. You are the team leader and have been informed of two critical patients needing blood transfusions. Patient A is an elderly farmer well-regarded in the community, who sustained severe injuries while trying to save his livestock from floodwaters. His injuries are life-threatening and may require extensive medical resources. Patient B is a young woman, 25 years old, with minor injuries but significant blood loss who was helping in rescue efforts when she was injured. Both patients have matching blood types available in limited supply.",
+            "scenario_id": 36,
+            "state": "You decide to allocate the limited blood supply to Patient B.",
+            "probe": "Why?",
             "choices": [
-                "Dr. Soraya, the local doctor",
-                "The group of village workers",
-                "Leila, the community-involved elderly woman"
+                "Patient B's injuries are less severe and she is more likely to recover fully with the transfusion, maximizing positive outcomes.",
+                "Patient B is younger and has a longer potential lifespan ahead, thus making the most of the resources.",
+                "Patient B has contributed to rescue efforts, and it's fair to reward such selflessness.",
+                "The community relies on the elderly farmer, and losing him would be a significant blow.",
+                "Patient A's moral standing and actions during the disaster deserve recognition and prioritization."
             ]
         },
         [
             {
-                "fairness": 0.0
+                "utilitarianism": 10.0
             },
             {
-                "fairness": 10.0
+                "utilitarianism": 10.0
             },
             {
-                "fairness": 0.0
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
             }
         ]
     ],
@@ -163,6 +267,38 @@
                 "I feel a personal responsibility towards young travelers.",
                 "The young woman deserves a chance as she can potentially contribute much to the future.",
                 "I know more community members would want the elderly man saved first."
+            ]
+        },
+        [
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 0.0
+            },
+            {
+                "fairness": 0.0
+            },
+            {
+                "fairness": 0.0
+            }
+        ]
+    ],
+    [
+        {
+            "scenario": "A natural disaster has struck, and you're part of a medical team prioritizing who to treat first at the emergency relief tent. Patient 1 is a local community leader, Maria, who has been instrumental in organizing volunteers and distributing relief supplies. You have been working closely with her over the past few days to coordinate rescue operations. She has a fractured leg and is in significant pain but is stable. She's brought in now because she fears the fracture might worsen. Patient 2 is a tourist visiting the area, suffering from smoke inhalation. He has been receiving oxygen but continues to cough heavily and is at risk of developing a respiratory infection. His condition can deteriorate quickly without further treatment.",
+            "scenario_id": 56,
+            "state": "You chose to assess the tourist with smoke inhalation first.",
+            "probe": "Why?",
+            "choices": [
+                "The tourist's medical condition is more urgent.",
+                "The visitor's injuries pose a higher risk of deterioration.",
+                "The community leader's contribution makes her more deserving.",
+                "Maria has done so much for the community, we owe her.",
+                "I personally know Maria, and it's hard to see her suffer."
             ]
         },
         [
@@ -217,6 +353,38 @@
     ],
     [
         {
+            "scenario": "In a rural clinic with limited resources, you receive patients from a multivehicle accident on a nearby highway. There are three patients in critical condition. Patient 1 is an experienced ambulance driver who frequently volunteers in the community. He has major leg injuries and is in shock. Patient 2 is a young pregnant woman with a possible fractured pelvis and internal bleeding. Her condition is deteriorating quickly, but she is still conscious. Patient 3 is a man known for causing disturbances in the neighborhood. He has a severe head injury and is unconscious.",
+            "scenario_id": 66,
+            "state": "You choose to prioritize the young pregnant woman for immediate surgery.",
+            "probe": "Why?",
+            "choices": [
+                "She has the highest likelihood of survival with immediate care.",
+                "Saving her could potentially save two lives.",
+                "Her injuries are more severe.",
+                "I feel sympathetic towards her situation.",
+                "She is a pillar of the community and her absence would be felt."
+            ]
+        },
+        [
+            {
+                "utilitarianism": 10.0
+            },
+            {
+                "utilitarianism": 10.0
+            },
+            {
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
+            }
+        ]
+    ],
+    [
+        {
             "scenario": "In a remote area affected by a natural disaster, you have two patients who require immediate attention. Patient 1 is a well-known local doctor who has been providing essential healthcare services to the community for years. She is experiencing severe pain due to a suspected internal injury and is semi-conscious. Her contribution to the survival and recovery of many in the community has been substantial. Patient 2 is a young rescue volunteer who saved multiple lives during the disaster but was injured in the process. He has visible fractures and is bleeding from the arm but remains conscious. Both patients' vital signs are currently stable, but their injuries could worsen if not treated promptly.",
             "scenario_id": 71,
             "state": "You chose to attend to the rescue volunteer first.",
@@ -249,21 +417,33 @@
     ],
     [
         {
-            "scenario": "In the aftermath of an earthquake, medical supplies are extremely limited, and injured individuals are being brought to a field hospital. Among them are two individuals: a local teacher and a foreign tourist. The local teacher is conscious, with a shattered arm and is in considerable pain. The tourist has severe head trauma and his condition appears more critical but less likely to survive. Both require immediate attention to prevent further deterioration of their conditions.",
-            "scenario_id": 81,
-            "state": null,
-            "probe": "Whom do you prioritize for treatment first?",
+            "scenario": "A rescue team is responding to an accident involving a derailed train. Among the trapped passengers, two need immediate attention. Patient A is an elderly woman with multiple fractures and severe bruising. She is unconscious and her vitals are dropping steadily. Her survival, even with immediate intervention, is questionable. Patient B is a 30-year-old school teacher with a severe laceration on his leg and symptoms of a concussion. He is conscious and has a better chance of survival if treated promptly. Both patients are calling for help but resources are limited, and you can only start treatment on one patient immediately.",
+            "scenario_id": 76,
+            "state": "You choose to attend to Patient A first.",
+            "probe": "Why?",
             "choices": [
-                "The local teacher",
-                "The foreign tourist"
+                "I made an emotional decision, she reminds me of my grandmother.",
+                "Her injuries appear more dramatic, prompting a reflex to respond.",
+                "I thought she needed more immediate attention due to her fragile state.",
+                "Her condition appears stable and could progress more critically without immediate intervention.",
+                "I felt compelled to aid the vulnerable elderly over someone who's middle-aged and seemingly more robust."
             ]
         },
         [
             {
-                "fairness": 10.0
+                "utilitarianism": 0.0
             },
             {
-                "fairness": 0.0
+                "utilitarianism": 10.0
+            },
+            {
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
+            },
+            {
+                "utilitarianism": 0.0
             }
         ]
     ],
@@ -301,6 +481,38 @@
     ],
     [
         {
+            "scenario": "In a busy emergency room after a natural disaster, two patients are brought in at the same time. One is a well-known philanthropist who has supported numerous community health projects, while the other is an unknown person from a disadvantaged background. The philanthropist has a deep laceration on their arm and is losing blood rapidly. The disadvantaged patient has a severe head injury and is unconscious. Both need immediate attention.",
+            "scenario_id": 96,
+            "state": "You decided to attend to the disadvantaged patient first.",
+            "probe": "Why?",
+            "choices": [
+                "The head injury is more life-threatening and time-sensitive.",
+                "The disadvantaged patient is more vulnerable.",
+                "The philanthropist can afford private care elsewhere.",
+                "I want to ensure equal treatment for all, regardless of their status.",
+                "I'm influenced by the media and public opinion."
+            ]
+        },
+        [
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 0.0
+            },
+            {
+                "fairness": 0.0
+            },
+            {
+                "fairness": 10.0
+            },
+            {
+                "fairness": 0.0
+            }
+        ]
+    ],
+    [
+        {
             "scenario": "During a widespread natural disaster, you are a healthcare provider with very limited resources, including only two doses of a life-saving medication. You have three patients: a child with a severe allergic reaction, an elderly woman with respiratory distress due to chronic lung disease, and a young adult man with a severe systemic infection that has resisted initial treatments. The child needs a full dose to recover, the elderly woman needs a full dose to survive, and the young man can survive with a half dose but with a lower chance of full recovery.",
             "scenario_id": 101,
             "state": "You chose to give one full dose to the child and half a dose to the young man.",
@@ -329,441 +541,22 @@
     ],
     [
         {
-            "scenario": "You are the coordinator at a makeshift medical tent following a train derailment in a rural area. The response protocol strictly prohibits the extraction of medical supplies from nearby civilian homes or businesses without explicit authorization from the command center. The medical tent is currently facing an acute shortage of sterile supplies needed for wound treatment and risk of infection is increasing. You receive word that another medical team is delayed due to an issue on the route. Several local community members offer their own sterile supplies they have at home. Some of these members have been trained in first aid. Additionally, the owner of a nearby pharmacy offers her stock, noting that she doesn\u2019t have the authority to open it and is awaiting a call back from the command center.",
-            "scenario_id": 111,
-            "state": null,
-            "probe": "What do you do?",
+            "scenario": "In the aftermath of an earthquake, multiple individuals are brought to the makeshift triage center. A young mother with a broken leg and a toddler with a severe head injury are in need of assistance. The mother is conscious and in pain, able to speak, and the child is unconscious and unresponsive. There is an elderly community leader in the queue, conscious but with multiple fractures and a history of heart problems, voicing concerns about family members still trapped in their homes. A nearby team of rescue workers awaits further support to continue search efforts.",
+            "scenario_id": 106,
+            "state": "You chose to prioritize the child with the severe head injury.",
+            "probe": "Why?",
             "choices": [
-                "Allow the use of community members' sterile supplies immediately.",
-                "Wait for the command center's explicit authorization to use local supplies.",
-                "Negotiate with the pharmacy owner to access supplies without waiting for authorization.",
-                "Advise the team to use improvised methods like boiling cloth to sterilize them while awaiting authorization."
-            ]
-        },
-        [
-            {
-                "protocol_focus": 0.0
-            },
-            {
-                "protocol_focus": 10.0
-            },
-            {
-                "protocol_focus": 0.0
-            },
-            {
-                "protocol_focus": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a nurse at a field hospital with only one blood transfusion kit available. Two patients, one with a severe internal bleeding due to a car accident, and another with a critical blood disease requiring a transfusion, have been admitted. Hospital protocol dictates to prioritize external wounds that pose immediate danger. However, the patient with the blood disease has a slightly better chance of recovery if treated now, while the car accident victim has a dire need according to protocol.",
-            "scenario_id": 121,
-            "state": null,
-            "probe": "How do you decide to allocate the blood transfusion kit?",
-            "choices": [
-                "Ignore the protocol. Treat the patient with the blood disease since there's a slightly better chance of recovery.",
-                "Obey the protocol. Treat the car accident victim with internal bleeding following the hospital guidelines.",
-                "Delay the decision and attempt to acquire another transfusion kit first, even though both patients need immediate care."
-            ]
-        },
-        [
-            {
-                "protocol_focus": 0.0
-            },
-            {
-                "protocol_focus": 10.0
-            },
-            {
-                "protocol_focus": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are coordinating resource distribution in a medical emergency scenario within a temporary field hospital. There's a strict protocol about prioritizing treatment based on the severity of injuries. A patient with a moderate injury, a fractured arm, is awaiting surgery. Another patient with a less critical condition, a sprained ankle, requests an earlier slot because they have an important personal event to attend. The protocol is clear: treat in order of injury severity to maximize resource effectiveness.",
-            "scenario_id": 131,
-            "state": null,
-            "probe": "Do you allow the patient with the sprained ankle to skip the queue for personal reasons, or do you adhere strictly to the protocol?",
-            "choices": [
-                "Make an exception. Allow the patient with the sprained ankle to skip the queue.",
-                "Stick to the protocol. Treat the patient with the fractured arm first.",
-                "Stick to the protocol. Explain to the patient with the sprained ankle why they must wait their turn."
-            ]
-        },
-        [
-            {
-                "protocol_focus": 0.0
-            },
-            {
-                "protocol_focus": 10.0
-            },
-            {
-                "protocol_focus": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a doctor on a rescue helicopter dispatched to a remote island that has been hit by a natural disaster. There are two groups of injured people at different locations on the island, each requiring medical attention. Group A consists of 10 people with moderate injuries who have a consistent survival rate if treated promptly. Group B consists of 5 people with severe injuries, where treatment outcomes are highly unpredictable. Treating Group A gives you a precise control over the outcomes, while treating Group B involves unpredictable results despite the urgency.",
-            "scenario_id": 141,
-            "state": null,
-            "probe": "Which group do you prioritize treating?",
-            "choices": [
-                "Treat Group A, where there is less uncertainty and a consistent chance of survival, minimizing risk and maximizing safe outcomes.",
-                "Treat Group B, accepting the volatility in the outcome but addressing the severe cases that need immediate attention."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 10.0
-            },
-            {
-                "risk_aversion": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a doctor at a rural clinic with limited facilities. An epidemic has broken out in the region, and you have two different treatment options available: a newer, experimental treatment with high variability in outcomes, and a more traditional treatment with consistent, moderate success. Due to supply constraints, you can choose only one treatment method for a critical group of patients. This group includes both mild and severe cases, with some patients at greater risk of deteriorating quickly.",
-            "scenario_id": 151,
-            "state": null,
-            "probe": "Which treatment method do you choose?",
-            "choices": [
-                "Choose the experimental treatment, aiming for potentially higher individual success rates but with uncertain overall results and higher variability between outcomes.",
-                "Choose the traditional treatment to ensure consistent and more predictable success across the group, minimizing the overall risk of major negative outcomes."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 0.0
-            },
-            {
-                "risk_aversion": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the lead medic in an emergency response team during a natural disaster. Several injured civilians require immediate medical attention. One patient has severe bleeding, while another patient has multiple fractures and is unconscious. You must decide which patient to transport first to the makeshift hospital.",
-            "scenario_id": 161,
-            "state": null,
-            "probe": "Which patient do you transport first?",
-            "choices": [
-                "Transport the patient with severe bleeding first using an unstable boat transport across a rapid river. It's a faster route, but there's a risk of tipping over, which means potentially not reaching the hospital at all. If successful, the patient can receive immediate life-saving surgery.",
-                "Transport the unconscious patient with fractures using a longer, land-based detour with reliable road conditions. This method is slower but safer, ensuring you will arrive at the hospital without additional risk. It minimizes transportation risk and guarantees patient arrival, although at a later time."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 0.0
-            },
-            {
-                "risk_aversion": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "There is a sudden outbreak of a contagious disease in your region. You have a limited stock of a new antiviral drug that can potentially cure the disease. A trusted pharmaceutical company has two different production plans.",
-            "scenario_id": 171,
-            "state": null,
-            "probe": "Which production plan would you choose?",
-            "choices": [
-                "Plan A: The production could either finish earlier in 5 days or later in 15 days.",
-                "Plan B: The production will reliably complete in 10 days."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 0.0
-            },
-            {
-                "risk_aversion": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are in charge of a triage situation following a mass casualty incident. Among the injured are a middle-aged man who has a deep laceration that needs immediate attention, or he risks life-threatening infection; a young woman with a minor head injury but with a high risk of developing brain swelling in the next 24 hours; and an elderly patient with a broken leg that is causing severe pain but is not life-threatening. Given the limited resources and time, you must decide who to attend to first.",
-            "scenario_id": 181,
-            "state": null,
-            "probe": "Whom do you prioritize?",
-            "choices": [
-                "Prioritize the middle-aged man with the deep laceration because it's an immediate risk issue, despite the unknown potential severity of the others.",
-                "Prioritize the young woman because preventing brain swelling is critical and has a potential higher impact on her health, even though it's uncertain whether her condition will worsen.",
-                "Prioritize the elderly patient with a broken leg to manage his severe pain, even though it's not life-threatening."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 0.0
-            },
-            {
-                "risk_aversion": 10.0
-            },
-            {
-                "risk_aversion": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are part of a medical team responding to an earthquake disaster area with limited resources. You have two patients needing immediate attention. Patient A has a severe leg injury and will likely recover fully if treated now, but there is a risk of gangrene if untreated for too long. Patient B is trapped under debris and may have internal injuries, but it is uncertain without further diagnosis. Both have similar chances of survival if treated immediately, but you have the resources to treat only one at the moment.",
-            "scenario_id": 191,
-            "state": null,
-            "probe": "Which patient do you prioritize for treatment?",
-            "choices": [
-                "Prioritize Patient A with the severe leg injury, confident in the diagnosis and knowing immediate treatment avoids the risk of infection, but this leaves Patient B's situation uncertain.",
-                "Prioritize Patient B, who is trapped and has a more uncertain condition, aiming to assess and potentially address life-threatening internal injuries, though this could result in a more complicated situation if Patient A develops gangrene."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 10.0
-            },
-            {
-                "risk_aversion": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In a small clinic cut off by a snowstorm, you have two patients. One patient, a young child, has a moderate fever with a history suggesting potential allergic reaction to common fever reducers, which you have in sufficient stock. The other patient, an elderly man, has a critical fever and no history indicating allergy. You only have enough fever reducer left now for one patient.",
-            "scenario_id": 201,
-            "state": null,
-            "probe": "Which patient do you choose to treat with your remaining fever reducer?",
-            "choices": [
-                "Administer the fever reducer to the elderly man with no history of allergy, minimizing potential risk of side effects.",
-                "Administer the fever reducer to the young child, despite the potential for a severe allergic reaction."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 10.0
-            },
-            {
-                "risk_aversion": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the chief medical officer on an intercontinental flight. An unexpected turbulence event has caused severe injuries to passengers in different sections of the plane, two being critical. One critical patient is in the economy class, suffering from a head injury, and will require immediate stabilizing care. The other critical patient is a business-class passenger with a life-threatening cardiac event needing urgent intervention. There are limited medical supplies available for onboard treatment, sufficient only for one of these critical cases. Additionally, both patients require attention within the next few minutes to maximize their chances of survival.",
-            "scenario_id": 211,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Prioritize treating the cardiac event for the business-class passenger to leverage your expertise on similar cardiac cases and maximize potential survival. Delay treatment for the head injury patient until after addressing the cardiac patient, even though this risks the chances of survival for the economy class passenger growing slimmer.",
-                "Divide your resources equally between the cardiac event and the head injury. Attempt to stabilize both patients with limited supplies, accepting the possibility that neither may receive sufficient care, but ensuring you did not prioritize one over the other based solely on class or specific condition complexity."
-            ]
-        },
-        [
-            {
-                "risk_aversion": 0.0
-            },
-            {
-                "risk_aversion": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In an emergency room during a massive heatwave, five patients are brought in suffering from severe heatstroke. There's a limited amount of cooling vests available, which are essential to reducing body temperature and preventing organ damage. Patient A has the most severe symptoms and requires all the cooling vests to have a chance of recovery. Allocating the vests to Patient A will prevent any other patients from receiving the necessary treatment, risking their quick deterioration. Distributing the vests among the other four patients would stabilize them but leave Patient A untreated and at high risk of death.",
-            "scenario_id": 221,
-            "state": null,
-            "probe": "What action will you take?",
-            "choices": [
-                "Use all the cooling vests on Patient A, giving them the best chance of survival but leaving the other patients without treatment.",
-                "Distribute the cooling vests among the other four patients, stabilizing them but leaving Patient A without the necessary treatment."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In a remote village in the mountains, a team of medics arrives to help after an avalanche that injured multiple people. There are five injured villagers, all needing immediate care to prevent death. The medics have limited medical supplies, including an advanced blood clotting agent that can only be used twice. Without it, patients will succumb to their injuries. Villager A is severely injured and would use both doses, giving A the highest chance of survival. Villagers B, C, D, and E are less severely injured and can each be stabilized by using half a dose per person. Using the agent on Villager A would mean there's none left for others, and using it on the other villagers would spare none for Villager A, who will not survive without the full dose.",
-            "scenario_id": 231,
-            "state": null,
-            "probe": "Upon further examination, you assess that Villager A would need the full dose of blood clotting agent for survival, whereas each of the other four villagers can be stabilized with half a dose. Using the full supply on Villager A will leave others at risk of death. What do you decide to do?",
-            "choices": [
-                "Treat Villager A with both doses, and accept there are no treatments left for Villagers B, C, D, and E.",
-                "Distribute half a dose to Villagers B, C, D, and E each, maximizing the chances for their survival."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are working as a doctor in a field hospital during a large-scale humanitarian mission in a remote area. Three patients arrive simultaneously: a local community leader who has been instrumental in coordinating relief efforts but has only minor injuries, a pregnant woman in critical condition who requires extensive resources to save both her and the baby, and a relief worker who has contracted a contagious disease and requires quarantine and treatment to prevent an outbreak. You have limited resources and can only treat one patient immediately. Treating the community leader will boost overall morale and coordination but is not urgent. Treating the pregnant woman can save two lives at a high resource cost. Treating the contagious disease of the relief worker could prevent a broader outbreak but diverting extensive resources from individual care.",
-            "scenario_id": 241,
-            "state": null,
-            "probe": "Who do you prioritize for immediate treatment?",
-            "choices": [
-                "Treat the community leader.",
-                "Treat the pregnant woman.",
-                "Treat the relief worker with the contagious disease."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            },
-            {
-                "utilitarianism": 5.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are in a medical tent at a disaster site after a large-scale natural disaster. You've been working tirelessly to treat a volunteer firefighter who was injured while saving others from collapsing buildings. Her injuries are severe, but you've already invested significant resources in her care. Suddenly, a group of five people in critical condition arrives; they were trapped in debris but can be stabilized with limited resources if treated immediately. Due to limited supplies and manpower, you can either continue treating the firefighter or switch your focus to the group. If you prioritize the firefighter, the new arrivals will likely succumb to their injuries. However, if you stop treating the firefighter to help the new group, she may not survive given the state of her injuries.",
-            "scenario_id": 251,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Continue to treat the injured firefighter.",
-                "Switch to treating the group of five new arrivals."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "A massive car pileup has occurred on a freeway at night, causing multiple casualties. You approach the scene with a limited medical team and equipment. There are two critically injured individuals: one is a firefighter who was helping others out of their vehicles and ended up getting trapped and seriously injured when another car lost control; the other is a driver who caused the initial crash because he was excessively speeding and driving under the influence. Both are in dire need of immediate care, but given your limited resources and time, you can only save one.",
-            "scenario_id": 261,
-            "state": null,
-            "probe": "Who do you choose to treat?",
-            "choices": [
-                "Treat the firefighter",
-                "Treat the driver"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "During a natural disaster, a medical team has a limited supply of oxygen tanks that are critical for saving patients with respiratory problems. You have two patients: one is a young first responder who sustained severe injuries while saving lives and requires immediate oxygen to survive. The other is an elderly patient with terminal cancer, struggling to breathe, but recent developments suggest that providing oxygen could extend the patient\u2019s life by a few weeks. You only have enough oxygen left to treat one patient.",
-            "scenario_id": 271,
-            "state": null,
-            "probe": "Who should receive the oxygen?",
-            "choices": [
-                "Provide oxygen to the young first responder",
-                "Provide oxygen to the elderly cancer patient"
+                "The child\u2019s medical condition is more urgent.",
+                "Young lives have more potential future contributions.",
+                "Children should always be prioritized due to their vulnerability.",
+                "The community leader needs reassurance to support his group.",
+                "Family situations are always uncertain; we must focus on treating surviving individuals."
             ]
         },
         [
             {
                 "utilitarianism": 10.0
             },
-            {
-                "utilitarianism": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You're a paramedic in a natural disaster-stricken area with severely limited medical supplies and time. You encounter two individuals trapped in a collapsed building. Person A is a firefighter who was attempting to rescue others when the building collapsed and suffers from a broken leg and deep lacerations. Person B is an individual who was caught stealing supplies from a relief center and suffers from multiple fractures and is unconscious.",
-            "scenario_id": 281,
-            "state": null,
-            "probe": "Who do you use your limited medical supplies on?",
-            "choices": [
-                "Use the supplies on the firefighter first",
-                "Use the supplies on the person who was caught stealing"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the only paramedic available at a public festival where two incidents have occurred simultaneously. A young woman, who had just pulled a child out from the path of an out-of-control carriage, got hit and now suffers from a suspected spinal injury and is unconscious. Meanwhile, a man who was arguing with another attendee got punched and sustained a broken nose and a bruised face. Both need immediate attention, but you have tools at hand that can only stabilize one of them until further help arrives.",
-            "scenario_id": 291,
-            "state": null,
-            "probe": "Who do you choose to treat first?",
-            "choices": [
-                "Provide immediate assistance to the woman who saved the child",
-                "Assist the man with the broken nose first"
-            ]
-        },
-        [
-            {
-                "utilitarianism": 10.0
-            },
-            {
-                "utilitarianism": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a paramedic responding to a traffic accident involving three individuals: a cyclist, a pedestrian, and a driver. The cyclist is severely injured and was hit while attempting to help a lost child cross the road. The pedestrian, who was crossing illegally, is moderately injured, and it might slightly delay their treatment if not attended promptly. The driver, who is lightly injured, was intoxicated and driving above the speed limit, causing the accident. Treating the cyclist requires immediate attention but doing so means that the other two patients' treatments might be delayed, risking complications.",
-            "scenario_id": 301,
-            "state": null,
-            "probe": "Who do you attend to first?",
-            "choices": [
-                "Treat the cyclist first",
-                "Treat the pedestrian and driver first"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are an emergency physician in a small rural hospital that has severely limited resources following a natural disaster. Three patients are in urgent need of the only ventilator available. The first patient is a young woman with severe asthma exacerbated by debris in the air, but she has a strong chance of recovery with access to the ventilator. The second patient is an elderly man with advanced COPD, who will likely need the ventilator indefinitely but has a low chance of survival even with it. The third patient is a middle-aged man with moderate respiratory distress due to inhalation of toxic smoke but has a reasonable chance of recovery if stabilized with the ventilator. Choosing to provide the ventilator to one of them means the others may not survive from the lack of immediate care.",
-            "scenario_id": 311,
-            "state": null,
-            "probe": "Who do you choose to give the ventilator to?",
-            "choices": [
-                "Provide the ventilator to the young woman",
-                "Provide the ventilator to the elderly man",
-                "Provide the ventilator to the middle-aged man"
-            ]
-        },
-        [
             {
                 "utilitarianism": 10.0
             },
@@ -771,604 +564,7 @@
                 "utilitarianism": 0.0
             },
             {
-                "utilitarianism": 5.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a paramedic responding to an emergency call of a bar fight that has escalated. Upon arrival, you find two individuals requiring immediate medical attention: One is a security guard who tried to break up the fight and was severely injured in the process, with multiple stab wounds that require urgent medical care to stop the bleeding. The second is one of the instigators of the fight, who has a head injury from being struck with a bottle and is experiencing dizziness and severe bleeding, risking loss of consciousness.",
-            "scenario_id": 321,
-            "state": null,
-            "probe": "Who do you prioritize for immediate transport to the hospital?",
-            "choices": [
-                "Transport the security guard",
-                "Transport the instigator"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In the aftermath of a major natural disaster, you are a doctor at a small local clinic overwhelmed with patients. Among the patients, there is a healthy 30-year-old local schoolteacher who has suffered a significant leg injury. Treating the teacher now will require using most of the clinic's remaining pain medication and resources, but she has a relatively high chance of full recovery if treated immediately. Meanwhile, an elderly tourist, who was volunteering as part of a relief effort, has multiple injuries. He requires immediate attention as his condition is more critical, but even with treatment, his chance of survival is relatively low.",
-            "scenario_id": 331,
-            "state": null,
-            "probe": "Whose treatment do you prioritize considering limited resources?",
-            "choices": [
-                "Prioritize the teacher, leading to a certain positive outcome for one person.",
-                "Prioritize the elderly tourist with a less certain outcome for saving a life."
-            ]
-        },
-        [
-            {
                 "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the only medical professional on a remote island where a group of volunteers are cleaning up oil spills. Suddenly, an explosion from a nearby machinery injures two volunteers. One of the injured, Volunteer A, was actively involved in coordinating safety measures and ensuring that the clean-up operation remained within international environmental standards. The other, Volunteer B, had been ignoring safety protocols and accidentally caused the explosion. Volunteer A has sustained multiple fractures and is bleeding heavily, while Volunteer B has burns covering a significant portion of their body, which if untreated quickly, could lead to critical condition. You only have enough resources to immediately treat one of them effectively, while the other will have to wait several hours for a rescue team.",
-            "scenario_id": 341,
-            "state": null,
-            "probe": "Whom do you prioritize for immediate treatment?",
-            "choices": [
-                "Provide immediate treatment to Volunteer A who adhered to safety protocols",
-                "Provide immediate treatment to Volunteer B who caused the explosion"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a medical responder at a remote mountain festival. During a storm, a tent collapses, trapping two people underneath. One is a well-known local volunteer who dedicates weekends to trail cleanup and environmental initiatives. The other is an individual with a record of littering and rule-breaking at previous festivals, including starting an unauthorized campfire. Both are moderately injured, but the volunteer has a suspected head injury that could require immediate attention, while the other person has a fractured leg that causes severe pain but is unlikely to be life-threatening. You have a single helicopter connected to medical facilities available immediately, and the next one can't arrive for hours. It's crucial to decide who gets evacuated quickly, while the other might have to endure a rough overnight stay in worsening weather.",
-            "scenario_id": 351,
-            "state": null,
-            "probe": "Who do you choose?",
-            "choices": [
-                "Evacuate the volunteer with the suspected head injury in the helicopter",
-                "Evacuate the individual with the fractured leg and record of rule-breaking in the helicopter"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In a small community clinic, two patients, a jogger who was struck by a car and a reckless motorcyclist who crashed into the clinic's front yard, need immediate attention. The jogger, who was following traffic rules, sustained severe leg injuries and risks losing it without quick medical intervention. The motorcyclist, known for his risky driving habits, has multiple broken bones but is stable in his condition. Resources at the clinic are limited and can effectively treat only one of these emergencies immediately to maximize the likelihood of full recovery.",
-            "scenario_id": 361,
-            "state": null,
-            "probe": "Which patient do you prioritize for immediate treatment?",
-            "choices": [
-                "Prioritize the jogger's leg injury for immediate treatment",
-                "Prioritize the motorcyclist's broken bones for immediate treatment"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a doctor working in a busy emergency room when two critical cases come in simultaneously. One is a firefighter who was severely injured attempting to rescue people from a burning building. He has extensive burns and requires immediate stabilization and treatment which would require all the resources of your team for at least an hour. The other patient is a mother of three who has suffered severe dehydration after being stranded in a remote area with her children for several days. Her treatment is simpler and can be done concurrently with other patients, but delaying care could lead to complications. Addressing her condition may also provide a faster turnover in the emergency room, allowing you to help more patients in the long run.",
-            "scenario_id": 371,
-            "state": null,
-            "probe": "How do you allocate your medical team's resources?",
-            "choices": [
-                "Prioritize the firefighter and focus all resources on his treatment first",
-                "Address the mother's dehydration while keeping other patients moving through the system"
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are working as an EMT during a large outdoor music festival. You receive an alert about a medical emergency at the crowded main stage area. Upon arrival, you find two patients. The first patient is a festival attendee who has collapsed due to dehydration and needs immediate medical intervention. The second patient is a festival security guard who was injured while protecting attendees from a potential threat, sustaining a serious injury in the process. You only have the resources to treat one patient fully at this moment.",
-            "scenario_id": 381,
-            "state": null,
-            "probe": "Which patient do you choose to treat first?",
-            "choices": [
-                "Treat the festival attendee who has collapsed from dehydration",
-                "Treat the security guard who was injured while protecting others"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 0.0
-            },
-            {
-                "moral_deservingness": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the only paramedic on duty at a remote emergency relief camp. There is a limited supply of IV antibiotics in the camp's medical tent. You are currently treating a patient, a young woman who developed a serious wound infection, and she has been receiving antibiotics for two days. Her condition is gradually improving but she still requires treatment. Suddenly, another patient is brought into the tent. He is an elderly man who has just arrived at the camp after a long and difficult journey. His infection is equally severe, but he has had no treatment yet.",
-            "scenario_id": 391,
-            "state": null,
-            "probe": "Given the limited supply of antibiotics, what do you do?",
-            "choices": [
-                "Continue the antibiotics for the young woman",
-                "Stop treatment for the young woman and start treatment for the elderly man"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the only available resource manager in a clinic during a severe flu outbreak. You have a patient who has been undergoing regular counseling due to stress caused by their illegal involvement in a smuggling ring. They have an appointment today for a crucial counseling session. Just as they arrive, you receive an emergency call from a nurse that a paramedic who was injured while rescuing people from a landslide is severely dehydrated and in need of immediate attention. The counseling session is important for the patient but can be rescheduled. The paramedic requires immediate medical intervention to stabilize their condition.",
-            "scenario_id": 401,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Attend to the counseling patient first",
-                "Rush to stabilize the paramedic"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 0.0
-            },
-            {
-                "moral_deservingness": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the only cardiologist in a busy urban hospital, and you have been treating a patient who is a war veteran suffering from congestive heart failure. The next step in their care is a complex but planned procedure that could significantly improve their condition. This procedure is scheduled for today. Just now, you receive an emergency call for a patient who has just been admitted after a heart attack. This new patient was leading an active and charitable lifestyle but now requires immediate angioplasty to open a blocked artery to increase their chances of survival without significant heart damage.",
-            "scenario_id": 411,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Proceed with the planned procedure for the long-term veteran patient",
-                "Conduct the emergency angioplasty on the newly admitted heart attack patient"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the sole doctor at a small medical clinic in a remote village. The clinic receives two emergency patients simultaneously. One is a local farmer who has been volunteering extensively to improve agricultural practices in the community. He was stung by multiple bees while working on a community project and is going into anaphylactic shock. The other is an outsider who has been aggressive and unkind to the villagers. He has similar symptoms after recklessly disturbing a beehive while trespassing on the farmer's property. You have enough resources to treat only one of them immediately to save their life.",
-            "scenario_id": 421,
-            "state": null,
-            "probe": "Who do you choose to treat first?",
-            "choices": [
-                "Treat the local farmer",
-                "Treat the outsider"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You're an emergency room doctor responding to an influx of patients after a bus accident. You're currently treating a young woman who was injured while rescuing fellow passengers from the wreck. As you are providing care, a new patient is brought in - a businessman who sustained similar injuries in the accident but was simply a passenger. You have limited resources and staff, and you believe you can only focus on continuing intensive care for one patient now. The other patient will likely be left without the resource-intensive care they need, increasing their risk of death.",
-            "scenario_id": 431,
-            "state": null,
-            "probe": "Who do you prioritize for the intensive treatment?",
-            "choices": [
-                "Continue treating the young woman",
-                "Switch treatment to the businessman"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are on duty at a hospital when two patients are rushed into the emergency room. One is a firefighter who inhaled smoke while rescuing a family from a burning building. The other patient is a burglar who was injured by a fall from a rooftop while fleeing from a crime scene. Both require immediate surgery, but there is only one surgical team available at this time.",
-            "scenario_id": 441,
-            "state": null,
-            "probe": "Which patient do you prioritize for surgery?",
-            "choices": [
-                "Prioritize the firefighter for surgery",
-                "Prioritize the burglar for surgery"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "During a snowstorm, an elderly man has fallen on ice outside his home and suffered a severe head injury. As the ambulance arrives, the paramedics are informed that a middle-aged woman who was delivering groceries nearby also slipped and suffered multiple fractures on her legs. Both patients need immediate transport to the hospital, but the ambulance can only handle one at a time due to the equipment needed for each case.",
-            "scenario_id": 451,
-            "state": null,
-            "probe": "Who do you prioritize for transport?",
-            "choices": [
-                "Transport the elderly man first",
-                "Transport the middle-aged woman first"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a doctor in a busy emergency department where two patients, both with life-threatening conditions, have just arrived. One is a firefighter who sustained injuries while rescuing several people from a burning building. The second patient was injured during a violent altercation where they were reportedly the aggressor. You have limited resources, and realistically, only one patient can receive the immediate, intensive care they need for a chance of survival.",
-            "scenario_id": 461,
-            "state": null,
-            "probe": "Who do you prioritize?",
-            "choices": [
-                "Prioritize the firefighter for treatment",
-                "Prioritize the person injured in the altercation"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a medic on a rescue helicopter responding to an emergency at sea. As you reach the scene, you find two patients\u2014one an injured fisherman who was caught in a storm and the other a rescue diver who got injured while saving the fisherman. Both have critical injuries and require immediate airlift to the hospital, but the helicopter only has enough medical supplies to treat one patient at a time before flying back to replenish. There is also limited time due to worsening weather conditions.",
-            "scenario_id": 471,
-            "state": null,
-            "probe": "Which patient do you prioritize for immediate treatment and airlift?",
-            "choices": [
-                "Prioritize treating and airlifting the fisherman who was injured in the storm.",
-                "Prioritize treating and airlifting the rescue diver who was injured while saving the fisherman."
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are called to an accident site where a bus and a car have collided. After assessing the situation, you find two critically injured individuals needing immediate attention. The first is the bus driver, who is semi-conscious and has been trying to help passengers despite his injuries. The second is the car driver, who is unconscious and was reportedly driving erratically before the collision, according to witnesses. Both require urgent medical intervention.",
-            "scenario_id": 481,
-            "state": null,
-            "probe": "Which patient do you prioritize for treatment?",
-            "choices": [
-                "Prioritize the bus driver, who was helping passengers",
-                "Prioritize the car driver, who was driving erratically"
-            ]
-        },
-        [
-            {
-                "moral_deservingness": 10.0
-            },
-            {
-                "moral_deservingness": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are an emergency doctor in a hospital's emergency department when a call comes in about a massive car accident involving several vehicles. Among the critically injured is a patient you have been treating for a chronic illness in your outpatient clinic, who requires immediate surgery to survive. Simultaneously, another patient, who you have not treated before, but whose injuries are slightly less severe and less urgent in nature, is brought in. The attending team suggests focusing on the new patient for better overall resource allocation, while temporarily stabilizing your current patient.",
-            "scenario_id": 491,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Immediately prioritize and proceed with surgery for your chronic patient",
-                "Focus on the new patient and stabilize your chronic patient later"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "A fire breaks out at a small rural hospital, and multiple patients suffer from smoke inhalation and burns. You are a nurse with a limited supply of intravenous fluids, crucial for treating the burn victims. One elderly patient, who you have been caring for over several weeks for chronic illness, has severe burns covering a large percentage of their body and would require all the IV fluids you have left to stabilize. Meanwhile, three new patients, all younger, have moderate burns and would each need only a third of the supply to stabilize. Transportation to transfer patients to a larger hospital is delayed due to road blockages from the fire debris. If you continue to treat the elderly patient with the remaining supply, the three new patients may not survive until transfer. However, if you allocate your resources to the three, the elderly patient will not survive.",
-            "scenario_id": 501,
-            "state": null,
-            "probe": "How do you choose to allocate the intravenous fluids?",
-            "choices": [
-                "Use the fluids for the three new patients",
-                "Continue providing care to the elderly patient"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 0.0
-            },
-            {
-                "continuation_of_care": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a nurse stationed at a remote mountain clinic. A sudden blizzard has resulted in several skiers becoming injured, but due to the storm, the road is blocked, and a snowstorm forecast predicts delays for rescue teams reaching the clinic. You have a single vial of an experimental drug that can dramatically enhance recovery speed. One patient has multiple fractures and internal injuries and needs the entire vial to have a chance at survival. You've begun administering the drug but it's not too late to change course. Three other patients arrive, each with single fractures that could heal more rapidly if given a third of the vial. If the severely injured patient receives the full vial, the other patients will suffer lingering complications due to inadequate care. However, switching to treat the other three patients could mean substantial recovery for them but would certainly result in the death of the severely injured patient.",
-            "scenario_id": 511,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Administer the full vial to the severely injured patient to maximize his chances of survival.",
-                "Distribute the vial among the three other patients to improve their recovery prospects."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In a rural clinic with limited medical staff, you are the only doctor available and have been providing ongoing treatment to an elderly patient with a complex heart condition. The patient has shown remarkable adherence to treatment and progress, with a critical medication administration scheduled today. However, a sudden accident nearby results in 4 teenagers with severe injuries needing immediate attention. They are brought to the clinic with bleeding and fractures that require urgent care. There is only enough time to fully attend to either the scheduled medication administration for the elderly patient, which could help stabilize his condition for the coming months, or to treat the critical injuries of the teenagers who need immediate stabilization to survive.",
-            "scenario_id": 521,
-            "state": null,
-            "probe": "Which situation will you prioritize?",
-            "choices": [
-                "Continue the treatment for the elderly patient to ensure continuity of care",
-                "Attend to the injured teenagers who need immediate life-saving care"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are the only doctor available in an emergency department at a rural hospital. A long-term patient suffering from a rare neurological disorder is scheduled for a critical diagnostic procedure. This procedure, essential to adjust their medication, is set to take place today after several reschedules, and without it, adjusting their treatment effectively will become increasingly difficult. While preparing for this procedure, you learn that two new patients are arriving, both with severe injuries from a car accident. One has internal bleeding and requires immediate surgical intervention to survive, while the other has a concussion that could become life-threatening if not evaluated and treated soon. Both patients cannot survive if no immediate action is taken within the next hour.",
-            "scenario_id": 531,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Proceed with the diagnostic procedure for the long-term patient",
-                "Attend to the two new patients with severe injuries"
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a doctor in an overburdened emergency department that is currently understaffed. Two patients have just been admitted with severe injuries due to separate accidents. Patient A is someone you've been treating for the past week after a severe car accident; they require a complex surgery that needs to be completed today to ensure complete recovery. Patient B is a new admission from a complicated multi-vehicle accident and requires immediate life-saving surgery to increase their chances of survival. If you opt to perform surgery on Patient A, you might not be able to perform surgery on Patient B in a timely manner, and vice versa.",
-            "scenario_id": 541,
-            "state": null,
-            "probe": "Which patient's surgery do you prioritize?",
-            "choices": [
-                "Perform surgery on Patient A to ensure their complete recovery.",
-                "Perform surgery on Patient B to maximize their chances of survival."
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a doctor at a small emergency room with limited supplies of IV fluids, which are essential for treating severe dehydration. You have a young child currently being treated who has shown mild improvement after receiving the first half of the recommended IV fluid dosage. Without the full treatment, there is a risk they may deteriorate. However, there is an elderly patient who has just arrived presenting with critical dehydration after being trapped in a location without water for several days. The elderly patient's condition is rapidly declining and will likely worsen without immediate intervention with the IV fluids. The ambulance service has been delayed due to a natural disaster, preventing further supplies delivery for at least 12 hours.",
-            "scenario_id": 551,
-            "state": null,
-            "probe": "How do you allocate the remaining IV fluids?",
-            "choices": [
-                "Allocate the remaining IV fluids to the elderly patient to stabilize their critical condition.",
-                "Continue administering the IV fluids to the young child to complete their treatment."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 10.0
-            },
-            {
-                "utilitarianism": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are an on-duty nurse at a local hospital emergency room when a major car accident occurs nearby, resulting in multiple incoming patients. You are already tending to a patient who is stable but needs ongoing observation due to a severe allergic reaction. As more patients start arriving from the car accident, you receive the following cases: Patient A has a severe limb injury likely leading to amputation if not treated immediately. Patient B has a head injury and shows signs of concussion but is stable at the moment. Patient C is unconscious but stable after fainting. You need to decide whether to continue the ongoing care for the allergic reaction patient, which ensures they maintain stability, or attend to the accident patients, specifically those who might face life-altering consequences without immediate intervention.",
-            "scenario_id": 561,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Focus on the new accident cases, risking the allergic reaction patient's stability",
-                "Continue monitoring the allergic reaction patient, potentially risking the accident patients' outcomes"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 0.0
-            },
-            {
-                "continuation_of_care": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "In a natural disaster-struck zone, you're the sole medic available at a makeshift treatment center. You are currently attending to an elderly patient with a heart condition exacerbated by the stress of the disaster. While you're monitoring her condition and adjusting her medication to prevent potential complications, a group of 5 new patients arrives. They all have minor injuries such as cuts and bruises, but they are visibly distressed and complaining of pain. Treating the five newcomers would involve cleaning and bandaging their wounds and providing pain relief, which would give them quick comfort but would require stepping away from the elderly patient. If you stop attending to the elderly patient, there\u2019s a risk that she could suffer from arrhythmia, potentially resulting in a severe outcome. What do you do?",
-            "scenario_id": 571,
-            "state": null,
-            "probe": "How do you prioritize care?",
-            "choices": [
-                "Treat the new arrivals to immediately alleviate their discomfort and stabilize them",
-                "Continue care for the elderly patient to ensure she remains stable and manages her heart condition"
-            ]
-        },
-        [
-            {
-                "utilitarianism": 10.0
-            },
-            {
-                "utilitarianism": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are working as a sole medical provider in a remote island clinic. You have a patient who has been receiving ongoing treatment for a severe infection and requires a continuous supply of intravenous antibiotics to avoid deteriorating. A new patient arrives with severe trauma needing immediate stabilization and will require a helicopter evacuation, which can only carry one patient and will take 9 hours to return. Due to medication shortages, you only have enough IV antibiotics or trauma wound care supplies to treat one patient fully until the helicopter arrives again.",
-            "scenario_id": 581,
-            "state": null,
-            "probe": "How do you allocate your resources?",
-            "choices": [
-                "Provide the remaining antibiotics to the new trauma patient and prepare them for immediate evacuation, potentially risking the infection patient's health",
-                "Continue administering antibiotics to the infection patient while the trauma patient awaits stabilization supplies until the next helicopter arrival"
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 0.0
-            },
-            {
-                "continuation_of_care": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a physician in a small rural clinic that has a finite supply of certain crucial medications. A severely injured patient arrives at the clinic requiring immediate antibiotic treatment to prevent life-threatening infection, although they have no insurance and cannot pay. While stabilizing this patient, you are informed that a local philanthropist, who donates heavily to the clinic, will be arriving in a few hours with a routine condition but one expected to require the same type of antibiotic for treatment. There\u2019s only enough medication to treat one patient. Stopping the first patient\u2019s treatment would result in a major health decline and possibly death. On the other hand, if you treat the philanthropist, you can ensure the clinic\u2019s future funding and potentially improve numerous patients' care conditions.",
-            "scenario_id": 591,
-            "state": null,
-            "probe": "How do you proceed?",
-            "choices": [
-                "Continue treating the first patient with the antibiotics, prioritizing immediate critical need.",
-                "Reserve the antibiotics for the philanthropist to ensure future funding for the clinic."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 0.0
-            },
-            {
-                "utilitarianism": 10.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You are a trauma surgeon at a metropolitan hospital with a busy emergency department. You are currently performing surgery on a patient who is in critical condition after a severe motorcycle accident. The patient's injuries are serious, and they need your undivided attention to have a chance of survival. As you are midway through the surgery, you receive an urgent call that a school bus accident has occurred nearby, resulting in multiple casualties. Many children have been injured, with several in critical yet potentially treatable conditions that, if addressed immediately, could lead to full recoveries. You can leave your current surgery with a resident and join the new cases, but doing so reduces the survival chances of your current patient.",
-            "scenario_id": 601,
-            "state": null,
-            "probe": "What do you do?",
-            "choices": [
-                "Stay and complete the surgery on your current patient, ensuring they have the best chance of survival.",
-                "Pause the current surgery and assist with the children from the bus accident."
-            ]
-        },
-        [
-            {
-                "continuation_of_care": 10.0
-            },
-            {
-                "continuation_of_care": 0.0
-            }
-        ]
-    ],
-    [
-        {
-            "scenario": "You're the sole doctor in an under-resourced community clinic when a patient, who has been under your care for chronic kidney disease, arrives in a critical state due to a severe kidney failure episode. Stabilizing this patient will require most of your available resources and a significant amount of time, with only a moderate chance of survival and improvement. Before you begin treatment, two new patients arrive at the clinic. One is a child with asthma who needs immediate assistance to prevent a life-threatening attack. The second is an elderly patient experiencing severe pneumonia complications, who could recover fully with prompt attention. Both cases would need fewer resources and time compared to your current patient.",
-            "scenario_id": 611,
-            "state": null,
-            "probe": "How do you allocate your resources?",
-            "choices": [
-                "Focus on the two new patients to maximize survival and recovery chances.",
-                "Continue treating your chronic kidney disease patient to honor the commitment."
-            ]
-        },
-        [
-            {
-                "utilitarianism": 10.0
             },
             {
                 "utilitarianism": 0.0
